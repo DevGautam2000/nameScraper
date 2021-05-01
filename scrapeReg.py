@@ -3,7 +3,7 @@ import json
 import requests
 from bs4 import BeautifulSoup
 
-url = ''
+url = '' # add required url from CGPA card
 cardUrl = []
 joinUrl = "https://result.smuexam.in/grade.php?subid="
 headers = {
