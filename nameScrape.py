@@ -37,7 +37,7 @@ def getNames(reg):
         joinString = joinString.split(":")
 
         name = joinString[1].strip()
-        print(name)  # print statement here
+        # print(name)  # print statement here
         namesDict[reg]['name'] = name
 
         # print(namesDict)
