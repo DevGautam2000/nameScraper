@@ -1,21 +1,21 @@
-from collections import OrderedDict
 import json
+from collections import OrderedDict
 
 fileName = "sortedDictOfNames.json"
 
 
-def dumpToJson(soretdDict):
+def dumpToJson(sortedDict):
     jsonDump = open(fileName, "w")
-    jsonDump.write(json.dumps(soretdDict))
+    jsonDump.write(json.dumps(sortedDict))
     jsonDump.close()
 
 
 def sortDictionary():
     fileObj = open('names-nov_dec_2020.json')
     regDict = json.loads(fileObj.read())
-    soretdDict = OrderedDict(sorted(regDict.items()))
+    sortedDict = OrderedDict(sorted(regDict.items()))
 
-    dumpToJson(soretdDict)
+    dumpToJson(sortedDict)
 
 
 def main():
