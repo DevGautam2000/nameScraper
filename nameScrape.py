@@ -49,7 +49,7 @@ def main():
     for reg in regDict:
         getNames(reg)
 
-    jsonDump = open("{}.json".format(fileName), "w")
+    jsonDump = open(f"{fileName}.json", "w")
     jsonDump.write(json.dumps(namesDict))
     jsonDump.close()
 
